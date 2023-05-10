@@ -28,6 +28,6 @@ DATABASE_URL="INSERT MONGODB URL HERE"
 
 ## Details of the issue:
 
-Able to sign out ONLY when users sign out from the same page they signed in from. That's pretty much the overview of it. I've tested it for other scenarios and you'll be able to see the result on those pages. 
+Most of the information will be available on the page.tsx files. Here's the general overview: able to sign out ONLY when users sign out from the same page they signed in from.
 
 _Please don't worry about the Form component, the Route Handler, and the dependencies related to it. I've tested the repo with and without it; it has no effect on with the auth issue. It's simply to help with the replication process._
