@@ -3,6 +3,7 @@ import { SignIn, SignOut } from './components/AuthButtons'
 import './globals.css'
 import { getServerSession } from 'next-auth'
 import { authOptions } from './api/auth/[...nextauth]/route'
+import Form from './components/Form/Form'
 
 export const metadata = {
   title: 'Create Next App',
@@ -32,6 +33,12 @@ export default async function RootLayout({
         <SignIn />
         <SignOut />
         {children}
+        <br/><br/>
+        <div>
+          <h1>Create a user</h1>
+          <i>Side note: once created, will automatically sign in</i>
+          <Form method='POST'/>
+        </div>
       </body>
     </html>
   )

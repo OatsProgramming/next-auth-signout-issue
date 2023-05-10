@@ -1,0 +1,29 @@
+.container {
+    position: relative;
+}
+
+.container input {
+    padding: 1.5rem;
+    border-radius: 10px;
+    outline: none;
+}
+
+.container > label {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    -webkit-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.container > input:focus + label,
+.container > input:not(:placeholder-shown) + label {
+    top: -1rem;
+    left: 0.8rem;
+}
+
+.container > input.error + label {
+    color: red;
+    background-color: red;
+}
