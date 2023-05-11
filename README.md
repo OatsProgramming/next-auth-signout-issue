@@ -18,7 +18,7 @@ Or, you can just create a user with the Form component that is provided here in 
 
 If .env is not provided here in the repo, you can copy-paste the following into the .env file:
 
-```js
+```env
 NEXTAUTH_URL="http://localhost:3000/"
 NEXTAUTH_SECRET="SECRET"
 NEXTAUTH_JWT_SECRET="JWT_SECRET"
@@ -31,3 +31,5 @@ DATABASE_URL="INSERT MONGODB URL HERE"
 Most of the information will be available on the page.tsx files. Here's the general overview: able to sign out ONLY when users sign out from the same page they signed in from.
 
 _Please don't worry about the Form component, the Route Handler, and the dependencies related to it. I've tested the repo with and without it; it has no effect on with the auth issue. It's simply to help with the replication process._
+
+![Screenshot of a page detailing the issue](/public/screenshot.png "Issue Screenshot")
